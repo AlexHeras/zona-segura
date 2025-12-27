@@ -1,0 +1,91 @@
+/*Afecta todo el cuerpo de la página web.*/
+.body {
+    background: linear-gradient(135deg, #7ab4ff, #0077ff);
+    /*Pone un fondo degradado en 
+diagonal (135 grados) que va de rosa claro a café rosado*/
+    height: 100vh;
+    /*Hace que el body mida lo mismo que la pantalla completa del usuario (100% 
+ 
+del alto visible).*/
+    margin: 0;
+    /*Quita márgenes por defecto del navegador, para que nada quede separado del 
+borde.*/
+    display: flex;
+    /*Convierte al body en un contenedor flexible para poder centrar cosas.*/
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+}
+
+/* cuadro del login */
+.login-container {
+    background: #ffffffcc;
+    /*Fondo blanco semi-transparente (cc = 80% de opacidad).*/
+    width: 350px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(5px);
+    /*Difumina ligeramente el fondo detrás del login (efecto cristal).*/
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/*  titulo Estilos del título "Inicio de sesión". */
+.h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+/*  estilos de input Modifica todos los campos de texto (correo y contraseña). */
+.input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid #81ff12;
+    outline: none;
+    /*Quita el borde azul todo feo que salia  cuando haces clic*/
+    text-align: center;
+    /*Texto dentro del input centrado.*/
+}
+
+/* botones */
+.button {
+    width: 85%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background: rgb(58, 165, 42);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: .3s;
+    /*Añade animación suave */
+}
+
+
+/*ocurre cuando pasas el mouse encima.*/
+.button:hover {
+    background: #46ffda;
+    /*Se oscurece el botón.*/
+    transform: scale(1.05);
+    /*Se hace más grande un 5%, da efecto de presión.*/
+}
+
+/* animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
