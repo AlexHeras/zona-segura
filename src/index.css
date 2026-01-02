@@ -98,7 +98,7 @@ body {
   align-items: center;
   text-align: center;
   color: #67b60c;
-  margin-top: 0;
+  margin-top: 100 px;
   /*Deja espacio para el header fijo*/
   margin-bottom: 0;
   /*Deja espacio para el footer fijo*/
