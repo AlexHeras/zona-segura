@@ -51,7 +51,7 @@ body {
   transition: color 0.3s ease;
 }
 
-/*=====NAVBAR=====*/
+/*=====NAVBAR======*/
 .navbar {
   display: flex;
   gap: 1rem;
