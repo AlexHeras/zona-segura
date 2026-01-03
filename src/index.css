@@ -86,12 +86,12 @@ body {
   /*Ocupa toda la ventana visible del navegador*/
   background:
     linear-gradient(rgba(255, 255, 255, 0.129), rgba(255, 255, 255, 0.5));
-  background-image: url("E:\Mis Archivos\Proyecto carrera\zona_segura\src\assets\fondo.jpeg");
+  background-image: url("/assets/fondo.jpeg");
   background-position: center center;
 
   /*Centra la imagen*/
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 600px;
   /*La imagen cubre todo el contenedor*/
   display: flex;
   justify-content: center;
