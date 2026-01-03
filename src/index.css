@@ -82,7 +82,7 @@ body {
 .site-main {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100dvh;
   /*Ocupa toda la ventana visible del navegador*/
   background:
     linear-gradient(rgba(255, 255, 255, 0.129), rgba(255, 255, 255, 0.5));
@@ -91,14 +91,14 @@ body {
 
   /*Centra la imagen*/
   background-repeat: no-repeat;
-  background-size: 600px;
+  background-size: cover;
   /*La imagen cubre todo el contenedor*/
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #67b60c;
-  margin-top: 100 px;
+  margin-top: 0;
   /*Deja espacio para el header fijo*/
   margin-bottom: 0;
   /*Deja espacio para el footer fijo*/
