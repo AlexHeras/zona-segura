@@ -8,6 +8,7 @@ import Mapa from "./pages/Mapa.jsx";
 import BuscadorRutas from "./pages/BuscadorRutas.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
+import BuscadorRutas2 from "./pages/BuscadorRutas2.jsx";
 
 import "./App.css";
 
@@ -32,6 +33,7 @@ function App() {
                 <Route path="blog" element={<Blog />} />
                 <Route path="mapa" element={<Mapa />} />
                 <Route path="Barra" element={<BuscadorRutas />} />
+                <Route path="Barra2" element={<BuscadorRutas2 />} />
                 <Route path="*" element={<h2>404 Página no encontrada</h2>} />
               </Routes>
             </Layout>
