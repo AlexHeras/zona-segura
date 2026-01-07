@@ -19,6 +19,9 @@ export default function Navbar() {
             <NavLink to="/barra" className={active}>
                 Barra
             </NavLink>
+            <NavLink to="/barra2" className={active}>
+                Barra2
+            </NavLink>
 
         </nav >
     );
