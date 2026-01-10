@@ -16,11 +16,11 @@ export default function Navbar() {
             <NavLink to="/mapa" className={active}>
                 Mapa
             </NavLink>
-            <NavLink to="/barra" className={active}>
-                Barra
+            <NavLink to="/Buscador Rutas" className={active}>
+                Buscador Rutas
             </NavLink>
-            <NavLink to="/barra2" className={active}>
-                Barra2
+            <NavLink to="/Buscador" className={active}>
+                Buscador
             </NavLink>
 
         </nav >
