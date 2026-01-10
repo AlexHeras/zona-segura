@@ -8,7 +8,7 @@ import Mapa from "./pages/Mapa.jsx";
 import BuscadorRutas from "./pages/BuscadorRutas.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
-import BuscadorRutas2 from "./pages/Buscador.jsx";
+import Buscador from "./pages/Buscador.jsx";
 
 import "./App.css";
 
