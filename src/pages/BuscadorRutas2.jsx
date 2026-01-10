@@ -69,7 +69,7 @@ function App() {
                             {filteredBooks.map(book => (
                                 <div key={book.id} className="book">
                                     <div className="book-icon">
-                                        {book.genre === 'Fantasía' ? '🐉' : '👻'}
+                                        {book.genre === 'Cuidado Vial' ? '🛣️⚠️' : '🔒🛡️'}
                                     </div>
                                     <div className="book-info">
                                         <h3>{book.title}</h3>
