@@ -1,6 +1,5 @@
-import { useState } from "react";
-import "../Estilos/estilos.css"
-
+import { useState, useEffect } from "react";
+import "../Estilos/estilos.css";
 
 export default function About() {
   const [formData, setFormData] = useState({
@@ -9,6 +8,13 @@ export default function About() {
     mensaje: "",
   });
 
+  useEffect(() => {
+    const savedData = localStorage.getItem("formData");
+    if (savedData) {
+      setFormData(JSON.parse(savedData));
+    }
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -16,6 +22,7 @@ export default function About() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    localStorage.setItem("formData", JSON.stringify(formData));
     alert(`Formulario enviado:\n${JSON.stringify(formData, null, 2)}`);
   };
 
@@ -25,7 +32,8 @@ export default function About() {
         <h1>Formulario de Contacto</h1>
         <label>
           Nombre:
-          <input className="inputf"
+          <input
+            className="inputf"
             type="text"
             name="nombre"
             value={formData.nombre}
@@ -37,7 +45,8 @@ export default function About() {
 
         <label>
           Correo:
-          <input className="inputf"
+          <input
+            className="inputf"
             type="email"
             name="correo"
             value={formData.correo}
@@ -49,7 +58,8 @@ export default function About() {
 
         <label>
           Mensaje:
-          <textarea className="inputf"
+          <textarea
+            className="inputf"
             name="mensaje"
             value={formData.mensaje}
             onChange={handleChange}
@@ -61,6 +71,5 @@ export default function About() {
         <button className="buttonf" type="submit">Enviar</button>
       </form>
     </section>
-
   );
 }
